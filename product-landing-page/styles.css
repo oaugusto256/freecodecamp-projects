@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 65px;
+  background-color: #ff7f9a;
+
+  position: fixed;
+  width: 100%;
+}
+
+img {
+  cursor: pointer;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.nav-link {
+  padding: 1rem;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40vh;
+
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+input {
+  width: 200px;
+  padding: 5px;
+}
+
+#submit {
+  width: 215px;
+  margin-top: 20px;
+}
+
+.form-div {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+}

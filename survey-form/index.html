@@ -2,15 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Survey Form</title>
 
-    <link rel="stylesheet" crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" />
+    <link
+      rel="stylesheet"
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -20,23 +27,90 @@
         <p id="description">Let us know how we can improve freeCodeCamp</p>
         <form action="" id="survey-form">
           <div class="input-box">
-            <div class="label">
-              <label for="name">* Name:</label>
-            </div>
-            <div class="input">            
-              <input id="name" type="text" placeholder="Enter your name">
-            </div>
+            <label id="name-label">* Name:</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
           </div>
           <div class="input-box">
-            <div class="label">
-              <label for="email">* Email:</label>
+            <label id="email-label">* Email:</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label id="number-label">* Number:</label>
+            <input
+              id="number"
+              type="number"
+              placeholder="Enter your number"
+              min="0"
+              max="10"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="" id="dropdown-label">
+              Which option best describes your current role?
+            </label>
+            <select name="" id="dropdown">
+              <option disabled value="">Select an option</option>
+              <option value="student">Student</option>
+              <option value="full-time-job">Full time Job</option>
+              <option value="partial-time-job">Partial time Job</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="input-box-radio">
+            <label for="" id="radio-label">
+              * How likely is that you would recommend freeCodeCamp to a friend?
+            </label>
+            <div>
+              <input type="radio" name="gender" value="definitely" />
+              Definitely<br />
+              <input type="radio" name="gender" value="maybe" /> Maybe<br />
+              <input type="radio" name="gender" value="not-sure" /> Not sure
             </div>
-            <div class="input">
-              <input id="email" type="text" placeholder="Enter your email">
+          </div>
+          <div class="input-box-check">
+            <label for="" id="check-label">
+              Things that should be improved in the future (Check all that
+              apply):
+            </label>
+            <div>
+              <div for="">
+                <input value="1" type="checkbox" />Front-end Projects
+              </div>
+              <div for="">
+                <input value="2" type="checkbox" />Back-end Projects
+              </div>
+              <div for="">
+                <input value="3" type="checkbox" />JavaScript Projects
+              </div>
+              <div for="">
+                <input value="4" type="checkbox" />Data Visualization Projects
+              </div>
+              <div for="">
+                <input value="5" type="checkbox" />Quality Assurance Projects
+              </div>
             </div>
+          </div>
+          <div class="input-box-textarea">
+            <label for="">Comments:</label>
+            <textarea placeholder="Enter a comment"></textarea>
+          </div>
+          <div class="flex">
+            <button id="submit">Submit</button>
           </div>
         </form>
       </div>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
